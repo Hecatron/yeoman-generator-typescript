@@ -1,0 +1,10 @@
+# Yarn
+
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+
+# Don't bother with zero installs - https://yarnpkg.com/features/zero-installs
+#!/.yarn/cache
+/.pnp.*
