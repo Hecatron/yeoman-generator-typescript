@@ -1,8 +1,10 @@
 # yeoman-generator-typescript
 
 This is just a base example of a yeoman generator written in typescript
+I originally tried to do this using yarn2 but had problems with yeoman supporting pnp
+So this repo is setup for yarn v1 which just installs the modules into node_modules/
 
-## Development - Install depends
+## Install depends
 
 To install the depends
 ```
@@ -11,16 +13,13 @@ yarn install
 
 To compile the typescript
 ```
-yarn run build
+yarn build
 ```
 
-## Development - Testing
+## Development - Running the generator
 
-Note this repo is setup to use yarn2 but I had problems running the yo command with yarn2's pnp system.
-It can work inside the source directory by running for example
-```
-yarn pnpify yo .\generators\app
-```
+To run the generator on the disk during development
 
-But trying to run this outside of the source dir, or a subdir in the source dir results in a module not found error
-even when trying to wrap it in pnpify
+```
+yo path\to\generator
+```

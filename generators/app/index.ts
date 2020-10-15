@@ -29,6 +29,7 @@ class SimpleGenerator extends Generator
 
   public end() : void {
     this.log("end() : Called last, cleanup, say good bye, etc");
+    this.log("Output Dir: " + this.destinationRoot());
   }
 
   public SomeMethod() {

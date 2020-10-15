@@ -23,6 +23,7 @@ class SimpleGenerator extends Generator {
     }
     end() {
         this.log("end() : Called last, cleanup, say good bye, etc");
+        this.log("Output Dir: " + this.destinationRoot());
     }
     SomeMethod() {
         this.log("SomeMethod");
