@@ -7,7 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node"
   },
-  "files": [
-    "generators/app/index.ts",
-  ]
+  "include": ["generators/*/index.ts"],
 }
