@@ -2,14 +2,21 @@
    // Use IntelliSense to find out which attributes exist for C# debugging
    // Use hover for the description of the existing attributes
    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-   "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug Generator",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:1111/",
-            "webRoot": "${workspaceFolder}/server/wwwroot"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Debug Yeoman generator written in typescript
+      "name": "Debug Generator",
+      "runtimeArgs": ["${workspaceFolder}/node_modules/yo/lib/cli.js"],
+      "program": "${file}",
+      "cwd": "${workspaceFolder}/debug-out",
+      "request": "launch",
+      "type": "pwa-node",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    },
+  ]
 }
