@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "yarn tsc",
-    "eslint:check": "yarn eslint --ext ts,tsx generators/*/index.ts"
+    "eslint:check": "yarn eslint --ext ts,tsx generators/*/index.ts",
+    "run:generator": "cd debug-out && yo ../generators/app"
   },
   "files": [
     "generators"
